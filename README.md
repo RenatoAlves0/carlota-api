@@ -45,5 +45,5 @@
 # TESTE
 
 - GET = pode ser feto pelo proprio navedador.
-- POST = é preciso instalar o postman, pois é preciso mandar um objeto.
+- POST, PUT, DELETE = é preciso instalar o postman, pois é preciso mandar um objeto.
 
