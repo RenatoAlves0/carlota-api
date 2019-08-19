@@ -3,11 +3,6 @@
 - NodeJS
 - Postman
 
-# PROCEDIMENTOS DE INICIALIZAÇÃO DO PROJETO
-
-- git clone https://github.com/RenatoAlves0/carlota-api.git
-- npm install
-- npm start
 # ENTIDADES
 
 - idosos
@@ -17,7 +12,7 @@
 - logins
 - pontuacaos
 
-# REQUISIÇõES 
+# REQUISIÇÕES 
 
 - GET = https://carlota-api.herokuapp.com/ENTIDADE
 - POST = https://carlota-api.herokuapp.com/ENTIDADE
@@ -44,6 +39,6 @@
 
 # TESTE
 
-- GET = pode ser feto pelo proprio navedador.
+- GET e GET por id = pode ser feto pelo próprio navedador.
 - POST, PUT, DELETE = é preciso instalar o postman, pois é preciso mandar um objeto.
 
