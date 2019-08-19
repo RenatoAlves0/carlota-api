@@ -19,28 +19,28 @@
 
 # REQUISIÇõES 
 
-- GET = http://localhost:3000/ENTIDADE
-- POST = http://localhost:3000/ENTIDADE
-- PUT = http://localhost:3000/ENTIDADE/id, id = (5d51fe37af34d20fe04065ab)
-- DELETE = http://localhost:3000/ENTIDADE/id
+- GET = https://carlota-api.herokuapp.com/ENTIDADE
+- POST = https://carlota-api.herokuapp.com/ENTIDADE
+- PUT = https://carlota-api.herokuapp.com/ENTIDADE/id, id == 5d51fe37af34d20fe04065ab
+- DELETE = https://carlota-api.herokuapp.com/ENTIDADE/id
 
 
 # EXEMPLO 
 
- - GET = http://localhost:3000/logins
- - POST = http://localhost:3000/logins
+ - GET = https://carlota-api.herokuapp.com/logins
+ - POST = https://carlota-api.herokuapp.com/logins
     obj = {
 	    "usuario": "gleibia",
 	    "senha": "ruanito123"
           }
-- PUT = http://localhost:3000/logins/id, id = (5d51fe37af34d20fe04065ab)
-- Exemplo = http://localhost:3000/logins/5d51fe37af34d20fe04065ab
+- PUT = https://carlota-api.herokuapp.com/logins/id, id == 5d51fe37af34d20fe04065ab
+- Exemplo = https://carlota-api.herokuapp.com/logins/5d51fe37af34d20fe04065ab
     obj = {
 	    "usuario": "exemplo-alteração",
 	    "senha": "exemplo-alteração"
           }
-- DELETE = http://localhost:3000/logins/id
-- Exemplo = http://localhost:3000/logins/5d51fe37af34d20fe04065ab
+- DELETE = https://carlota-api.herokuapp.com/logins/id
+- Exemplo = https://carlota-api.herokuapp.com/logins/5d51fe37af34d20fe04065ab
 
 # TESTE
 
