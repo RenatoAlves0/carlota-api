@@ -6,6 +6,7 @@ const Plano_diario = require('../models/plano_diario')
 router.post('/', (req, res, next) => {
     const plano_diario = new Plano_diario({
         _id: new mongoose.Types.ObjectId(),
+        idoso: req.body.idoso,
         data: req.body.data,
         hora: req.body.hora,
         tarefa: req.body.tarefa,
@@ -18,7 +19,9 @@ router.post('/', (req, res, next) => {
 })
 
 router.get('/', (req, res, next) => {
-    Plano_diario.find()
+    Plano_diario
+        .populate('idoso')
+        .find()
         .exec()
         .then(docs => { res.status(200).json(docs) })
         .catch(err => { res.status(500).json({ error: err }) })
@@ -26,6 +29,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:plano_diarioId', (req, res, next) => {
     Plano_diario.findById(req.params.plano_diarioId)
+        .populate('idoso')
         .exec()
         .then(doc => {
             if (doc) res.status(200).json(doc)
